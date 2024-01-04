@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body>
+    <button id="prikaziFormu">Rezerviraj stol</button>
+
+<div id="rezervacijaForma" style="display:none;">
+    <form action="rezerviraj.php" method="post">
+        Ime: <input type="text" id="ime" name="ime"><br>
+        Email: <input type="email" id="email" name="email"><br>
+        Telefon: <input type="text" id="telefon" name="telefon"><br>
+        Datum: <input type="date" id="datum" name="datum">
+        Vrijeme: <input type="text" id="vrijeme" name="vrijeme" placeholder="HH:MM (24h)"><br>
+        Broj stola: 
+        <i class="fas fa-info-circle info-icon" data-image="cloudscheme.jpg"></i>
+        <select name="broj_stola">
+            <option value="0">-Odaberi stol-</option>
+            <option value="1">Table 1 (max 5)</option>
+            <option value="2">Table 2 (max 3)</option>
+            <option value="3">Table 3 (max 5)</option>
+            <option value="4">Table 4 (max 5)</option>
+            <option value="5">Table 5 (max 3)</option>
+            <option value="6">Table 6 (max 3)</option>
+            <option value="7">Table 7 (max 3)</option>
+            <option value="8">Table 8 (max 5)</option>
+            <option value="9">Table 9 (max 3)</option>
+            <option value="10">Table 10 (max 3)</option>
+            <option value="11">Table 11 (max 3)</option>
+            <option value="12">Table 12 (max 4)</option>
+            <option value="13">Table 13 (max 4)</option>
+        </select><br>
+        <input type="submit" value="Rezerviraj">
+    </form>
+    
+    
+</div>
+<script src="scripts.js"></script>
+</body>
+</html>
